@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace PointProject
+using PointProject;
+namespace ProjectLine
 {
-    public class Center : Point
+    internal class Center : PointProject.Point
     {
-        public Center(double x, double y) : base(0, 0)
+        public Center(double x, double y) : base(x, y)
         {
         }
 
         public void Print()
         {
-            Console.WriteLine(this.x);
-            Console.WriteLine(this.y);
-            Console.WriteLine(this.number);
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(number);
         }
     }
 }
