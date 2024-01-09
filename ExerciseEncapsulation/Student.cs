@@ -9,6 +9,7 @@ namespace ExerciseEncapsulation
 {
     internal class Student
     {
+        public enum grades { failed = 2, acceptable = 3, average = 4, veryGood = 5, excellent = 6 }
         public static int StudentsCount = 0;
         public string Name { get; set; }
         public int Number { get; set; }
@@ -22,7 +23,7 @@ namespace ExerciseEncapsulation
 
         public bool HasIncome()
         {
-            if ((this.GradeBEL + this.GradeMath)/2 >= 5.5)
+            if ((this.GradeBEL + this.GradeMath) / 2 >= 5.5)
             {
                 return true;
             }
@@ -32,7 +33,7 @@ namespace ExerciseEncapsulation
 
         public static double CalculateGrade(Student student)
         {
-            return (student.GradeBEL + student.GradeMath)/2;
+            return (student.GradeBEL + student.GradeMath) / 2;
         }
     }
 }

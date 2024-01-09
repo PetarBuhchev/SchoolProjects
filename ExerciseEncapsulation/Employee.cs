@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -9,6 +10,7 @@ namespace ExerciseEncapsulation
 {
     internal static class Employee
     {
+        
         public static int countEmployees;
         public static double maxSalary;
         public static int minExperience;
@@ -20,7 +22,12 @@ namespace ExerciseEncapsulation
             minExperience = int.MaxValue;
         }
 
-        public static NewMaxSalary()
-            
+        public static void NewMaxSalary(double salary)
+        {
+            if (salary > maxSalary)
+            {
+                maxSalary = salary;
+            }
+        }
     }
 }

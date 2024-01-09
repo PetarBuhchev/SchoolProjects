@@ -10,14 +10,12 @@ namespace ExerciseEncapsulation
     {
         static void Main(string[] args)
         {
-            Student s1 = new Student();
-            Student s2 = new Student();
-            Student s3 = new Student();
-            s1.PrintStudentInformation();
-            Console.WriteLine(s1.HasIncome() ? "Получава" : "Не получава");
-
-            double grade = Student.CalculateGrade(s1);
-            Console.WriteLine(Student.StudentsCount);
+            const double Pi = 3.1415;
+            const int StudentsCount = 27;
+            const string Error = "Грешка при компилиране";
+            Console.WriteLine(Student.grades.average);//average
+            Console.WriteLine((int)Student.grades.average);//4
+            Console.WriteLine((Student.grades)4);//average
         }
     }
 }
